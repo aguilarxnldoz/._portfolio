@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/naldouche-favicon.svg"
+        />
+        <title>Ozem Aguilar | 👺 Full-Stack Web Developer</title>
+        <script
+            type="module"
+            src="/src/main.ts"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/576435627c.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body class="min-h-screen">
+        <div
+            id="wrapper"
+            class=""
+        >
+            <!-- 👺 Navigation Menu -->
+            <nav
+                id="navigation-menu"
+                class="h-8"
+            >
+                <button
+                    id="navigation-button"
+                    class="fixed w-12 h-12 top-4 right-4 z-50 text-2xl rounded-full border-[0.2px] border-white bg-white shadow-lg flex items-center justify-center sm:hidden"
+                >
+                    <i
+                        id="navigation-button-icon"
+                        class="fa-solid fa-bars"
+                    ></i>
+                </button>
+
+                <!-- Mobile Navigation Overlay -->
+                <div
+                    id="navigation-overlay"
+                    class="fixed inset-0 bg-opacity-50 z-40 hidden sm:hidden transition-opacity duration-300"
+                ></div>
+
+                <ul
+                    id="navigation-contents"
+                    class="w-full max-w-full hidden fixed inset-0 h-[100vh] bg-neutral-200 z-40 items-center justify-center text-black text-2xl gap-8 transition-transform duration-300 transform translate-x-full sm:relative sm:bg-white sm:h-15 sm:flex sm:flex-row sm:gap-15 sm:justify-center sm:text-black sm:text-base sm:translate-x-0 sm:inset-auto"
+                >
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250">Experience</li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250">Tech Stack</li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250"><a href="#projects">Projects</a></li>
+                    <li
+                        id="links-icon"
+                        class="flex sm:justify-self-end gap-4"
+                    >
+                        <div>
+                            <a href="https://linkedin.com/in/naldaguilar">
+                                <svg
+                                    width="38"
+                                    height="38"
+                                    viewBox="0 0 34 34"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M30.8125 0.796876H3.1875C2.56071 0.790497 1.95698 1.03303 1.5088 1.47125C1.06062 1.90948 0.804581 2.5076 0.796875 3.13438V30.8709C0.805975 31.4968 1.06262 32.0936 1.51065 32.5306C1.95869 32.9677 2.56162 33.2095 3.1875 33.2031H30.8125C31.4393 33.2081 32.0426 32.9647 32.4906 32.5262C32.9386 32.0877 33.1947 31.4898 33.2031 30.863V3.12641C33.1919 2.50147 32.9346 1.9062 32.4869 1.46998C32.0393 1.03377 31.4375 0.791876 30.8125 0.796876Z"
+                                        fill="#DC143C"
+                                    />
+                                    <path
+                                        d="M5.59406 12.9439H10.4045V28.4219H5.59406V12.9439ZM8.00063 5.24078C8.55236 5.24078 9.09171 5.40443 9.55042 5.71101C10.0091 6.01759 10.3666 6.45334 10.5776 6.96313C10.7887 7.47292 10.8437 8.03385 10.7359 8.57494C10.6281 9.11604 10.3622 9.613 9.97185 10.003C9.58153 10.3929 9.08432 10.6583 8.54312 10.7656C8.00192 10.873 7.44104 10.8173 6.93146 10.6058C6.42187 10.3943 5.98646 10.0364 5.68031 9.57743C5.37417 9.11842 5.21104 8.57893 5.21156 8.02719C5.21227 7.28794 5.50643 6.57922 6.0294 6.05674C6.55237 5.53427 7.26138 5.24078 8.00063 5.24078ZM13.422 12.9439H18.0333V15.0689H18.097C18.7398 13.8523 20.307 12.5694 22.6472 12.5694C27.5187 12.5588 28.4219 15.7648 28.4219 19.9219V28.4219H23.6114V20.8914C23.6114 19.0984 23.5795 16.7902 21.1119 16.7902C18.6442 16.7902 18.2245 18.7452 18.2245 20.7745V28.4219H13.422V12.9439Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://github.com/aguilarxnldoz">
+                                <svg
+                                    width="38"
+                                    height="38"
+                                    viewBox="0 0 38 38"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M29.0938 0H8.90625C3.98746 0 0 3.98746 0 8.90625V29.0938C0 34.0125 3.98746 38 8.90625 38H29.0938C34.0125 38 38 34.0125 38 29.0938V8.90625C38 3.98746 34.0125 0 29.0938 0Z"
+                                        fill="#DC143C"
+                                    />
+                                    <path
+                                        d="M19.0001 4.45312C10.8031 4.45312 4.15625 11.0987 4.15625 19.297C4.15625 25.8554 8.40943 31.4195 14.3074 33.3823C15.0492 33.5197 15.3216 33.0603 15.3216 32.6683C15.3216 32.3142 15.3078 31.145 15.3014 29.9047C11.1719 30.8026 10.3005 28.1532 10.3005 28.1532C9.62513 26.4375 8.65227 25.9813 8.65227 25.9813C7.3055 25.06 8.7538 25.079 8.7538 25.079C10.2444 25.1836 11.0294 26.6086 11.0294 26.6086C12.3533 28.8779 14.5019 28.2218 15.3489 27.8426C15.4822 26.8831 15.8668 26.2283 16.2913 25.8577C12.9944 25.4823 9.5285 24.2094 9.5285 18.5217C9.5285 16.9011 10.1083 15.5769 11.0579 14.5374C10.9036 14.1635 10.3955 12.6537 11.2015 10.6091C11.2015 10.6091 12.4481 10.2103 15.2848 12.1306C16.4688 11.8018 17.7386 11.6369 19.0001 11.6313C20.2616 11.6369 21.5325 11.8018 22.7187 12.1308C25.5519 10.2101 26.7967 10.6093 26.7967 10.6093C27.6046 12.6537 27.0964 14.1636 26.9422 14.5374C27.8939 15.5769 28.4699 16.9011 28.4699 18.5217C28.4699 24.2231 24.9973 25.4784 21.6919 25.8458C22.2244 26.3065 22.6988 27.2098 22.6988 28.5947C22.6988 30.5808 22.6815 32.1793 22.6815 32.6683C22.6815 33.0633 22.9487 33.5261 23.7012 33.3803C29.5959 31.4153 33.8438 25.8532 33.8438 19.297C33.8438 11.0988 27.1978 4.45312 19.0001 4.45312ZM9.71583 25.5985C9.68317 25.6723 9.56709 25.6944 9.46141 25.6438C9.35364 25.5954 9.29323 25.4947 9.32811 25.4208C9.36002 25.3448 9.4764 25.3237 9.58372 25.3746C9.69163 25.423 9.75309 25.5246 9.71583 25.5985ZM10.446 26.25C10.3752 26.3157 10.2367 26.2852 10.1429 26.1814C10.0458 26.0779 10.0275 25.9396 10.0994 25.873C10.1723 25.8073 10.3066 25.8381 10.4038 25.9415C10.5009 26.0463 10.5199 26.1836 10.446 26.25ZM10.9468 27.0836C10.8558 27.1468 10.7071 27.0876 10.6152 26.9555C10.5242 26.8235 10.5242 26.6653 10.6171 26.6018C10.7093 26.5384 10.8558 26.5954 10.949 26.7265C11.0397 26.8607 11.0397 27.019 10.9468 27.0836ZM11.794 28.049C11.7126 28.1387 11.5394 28.1147 11.4125 27.9922C11.2827 27.8726 11.2465 27.7027 11.3282 27.6129C11.4105 27.523 11.5848 27.5484 11.7126 27.6698C11.8415 27.7891 11.8808 27.9603 11.794 28.049ZM12.8888 28.3749C12.8529 28.4912 12.6861 28.5441 12.5179 28.4947C12.3501 28.4437 12.2402 28.3076 12.2741 28.1901C12.309 28.0731 12.4766 28.018 12.646 28.0709C12.8137 28.1215 12.9237 28.2567 12.8888 28.3749ZM14.1348 28.5132C14.139 28.6355 13.9965 28.7371 13.82 28.7393C13.6424 28.7433 13.4989 28.6441 13.497 28.5238C13.497 28.4001 13.6364 28.2996 13.8137 28.2966C13.9904 28.2932 14.1348 28.3915 14.1348 28.5132ZM15.3588 28.4663C15.3801 28.5856 15.2574 28.7084 15.0821 28.7411C14.9098 28.7725 14.7502 28.6988 14.7284 28.5803C14.707 28.4578 14.8319 28.3352 15.0039 28.3035C15.1795 28.273 15.3366 28.3449 15.3588 28.4663Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li
+                        id="cwm"
+                        class="text-xs sm:hidden"
+                    >
+                        <p>Connect with me!</p>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 👺 Header -->
+            <header class="w-full max-w-full sm:flex sm:mt-15 sm:items-center sm:justify-center sm:gap-20">
+                <!-- 👺 Profile Picture -->
+                <div
+                    id="profile-picture"
+                    class="w-75 mx-auto my-4 sm:mx-0"
+                >
+                    <img
+                        src="/naldouche.jpg"
+                        alt="naldouche"
+                        class="aspect-square rounded-full sm:rounded-2xl"
+                    />
+                </div>
+                <!-- ----------- -->
+
+                <div id="naldoz-page-title">
+                    <h1 class="text-4xl text-center font-bold">Ozem Aguilar</h1>
+                    <h2 class="text-md text-center text-red-600">Full-Stack Web Developer</h2>
+                </div>
+            </header>
+            <div
+                id="header-divider"
+                class="max-w-full w-full my-12"
+            ></div>
+
+            <!-- 👺 Main -->
+            <main class="min-h-screen mx-6 sm:mx-40 sm:mt-25">
+                <div></div>
+                <section id="brief-intro">
+                    <h3 class="text-xl">Hi! I'm <span class="text-red-600">Ozem</span>.</h2>
+                    <div class="m-3 bg-white rounded-2xl shadow-lg">
+                        <p class="p-4 text-sm">I'm currently a 2nd-year student aspiring to become an amazing web-developer.</p>
+                        <p class="p-4 text-sm">When I'm not rotting in front of a computer screen, I'm either at the gym or somewhere touching grass.</p>
+                    </div>
+                </section>
+
+                <!-- 👺 Projects -->
+                <section id="">
+                    <h2 id="projects" class="text-2xl font-bold">Projects</h2>
+
+                    <!-- 🔥 Circles -->
+                    <article
+                        id="projx-circles"
+                        class="projx bg-white p-5 rounded-2xl shadow-lg gap-5 sm:hover:"
+                    >
+                        <div class="flex gap-3 w-full items-center">
+                            <div id="circles-icon">
+                                <svg
+                                    width="45"
+                                    height="45"
+                                    viewBox="0 0 180 180"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        width="180"
+                                        height="180"
+                                        rx="36"
+                                        fill="#0044CC"
+                                    />
+                                    <path
+                                        d="M89.996 27C55.2073 27 27 55.2073 27 89.996C27 124.785 55.2073 153 89.996 153C124.785 153 153 124.793 153 89.996C153 55.1994 124.793 27 89.996 27ZM123.11 81.2869C115.321 84.0418 108.446 83.1208 93.0922 90.2263C100.42 94.5848 106.16 95.9503 111.193 96.641C118.751 97.554 126.547 99.1656 126.547 106.033C126.547 108.557 125.404 111.304 123.562 113.368C121.045 116.346 117.378 118.41 113.948 118.41C107.533 118.41 103.865 112.217 101.801 107.184C99.7372 103.056 97.4428 98.0224 90.8058 92.9811C88.7417 100.769 88.7417 105.58 88.7417 109.47C88.7417 115.433 89.8928 119.783 89.2021 124.594C88.2891 131.922 83.0176 136.971 75.9122 136.971C71.5616 136.971 68.3543 133.534 68.3543 129.175C68.3543 118.18 78.8894 117.036 87.8287 92.7509C69.4975 102.143 66.9729 110.614 55.2946 116.346C52.5398 117.719 50.7059 118.18 49.5627 118.18C44.2991 118.18 41.7745 114.512 41.7745 110.161C41.7745 105.12 45.6646 101.452 50.7059 99.6181C60.328 95.9503 68.8068 98.0224 86.9078 90.2263C78.8894 85.4152 72.2444 84.272 66.7506 83.1208C59.6373 82.2079 53.4528 80.6042 53.4528 73.9592C53.4528 66.8618 60.328 61.5903 66.7506 61.5903C72.6969 61.5903 76.3647 68.005 78.4368 73.0462C80.2628 77.3968 82.7795 82.2079 89.2021 87.7096C92.1793 76.0234 90.1151 69.8389 90.1151 63.4242C90.1151 52.6509 94.2355 43.0289 103.865 43.0289C109.137 43.0289 111.654 46.006 111.654 50.817C111.654 61.8205 98.3637 70.0612 92.1793 87.7096C107.295 79.6912 112.106 72.816 119.22 68.005C123.11 64.5674 126.547 61.5903 130.898 61.5903C135.709 61.5903 138.226 65.0278 138.226 69.1482C138.226 76.2536 132.279 79.9214 123.11 81.2869Z"
+                                        fill="#F8F4EA"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl">Circles</h3>
+                            </div>
+                            <div class="ml-auto sm:hidden">
+                                <button class="tab-down-button"><i class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+
+                        <p class="text-s mt-2">A Full-Stack Social Media platform that allows users collaborate and share their photos as a single user.</p>
+                        <div>
+                            <div>
+                                <i class="fa-brands fa-github text-black text-2xl"></i>
+                                <a
+                                    href="https://github.com/ILHT-IDSP/IDSP-Circle.git"
+                                    class="inline-block sm:hover:underline text-xs"
+                                    >IDSP-Circle
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projx bg-white p-5 rounded-2xl shadow-lg gap-5">
+                        <div class="flex gap-3 w-full items-center">
+                            <div id="barber-icon">
+                                <svg
+                                    width="38"
+                                    height="38"
+                                    viewBox="0 0 180 180"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M124.412 40.0827C124.412 59.8036 108.425 75.7905 88.7042 75.7905C68.9833 75.7905 52.9963 59.8036 52.9963 40.0827C52.9963 20.3618 68.9833 4.37482 88.7042 4.37482C108.425 4.37482 124.412 20.3618 124.412 40.0827ZM88.5449 105.662C68.7361 105.662 52.6778 121.72 52.6778 141.529C52.6778 161.338 68.7361 177.396 88.5449 177.396C108.354 177.396 124.412 161.338 124.412 141.529C124.412 121.72 108.354 105.662 88.5449 105.662Z"
+                                        fill="#E5E4DF"
+                                    />
+                                    <path
+                                        d="M53.048 33.2328H124.509V141.39H53.048V33.2328Z"
+                                        fill="#F4F3EF"
+                                    />
+                                    <path
+                                        d="M53.0859 84.9713L124.453 118.152V97.046L53.0859 63.8649V84.9713Z"
+                                        fill="#00B1FF"
+                                    />
+                                    <path
+                                        d="M124.453 135.227V141.328H92.3277L53.0859 123.152V102.046L124.453 135.227ZM124.453 79.971V58.8646L83.958 40.0781H53.0859V46.7902L124.453 79.971Z"
+                                        fill="#FF473E"
+                                    />
+                                    <path
+                                        d="M124.509 48.4056H53.0479C48.4253 48.4056 44.6786 44.6593 44.6786 40.0363C44.6786 35.4132 48.4249 31.667 53.0479 31.667H124.509C129.131 31.667 132.879 35.4132 132.879 40.0363C132.879 44.6593 129.131 48.4056 124.509 48.4056ZM132.878 141.392C132.878 136.77 129.131 133.022 124.509 133.022H53.0479C48.4253 133.022 44.6786 136.77 44.6786 141.392C44.6786 146.013 48.4249 149.761 53.0479 149.761H124.509C129.131 149.761 132.878 146.013 132.878 141.392Z"
+                                        fill="#BCC4C9"
+                                    />
+                                </svg>
+                            </div>
+                            <!-- 🔥 A-Side Studio | Barbershop -->
+                            <div>
+                                <h3 class="text-xl">A Side-Studio | Barbershop</h3>
+                            </div>
+                            <div class="ml-auto sm:hidden">
+                                <button class="tab-down-button"><i class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+
+                        <p class="text-s mt-2">
+                            A website for the A-Side Studio barbershop that allows its clients to login and book themselves an appointment. This increases productivitiy by reducing amount of messages sent between client and barber.
+                        </p>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
