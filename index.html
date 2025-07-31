@@ -52,7 +52,7 @@
                     class="w-full max-w-full hidden fixed inset-0 h-[100vh] bg-neutral-200 z-40 items-center justify-center text-black text-2xl gap-8 transition-transform duration-300 transform translate-x-full sm:relative sm:bg-white sm:h-15 sm:flex sm:flex-row sm:gap-15 sm:justify-center sm:text-black sm:text-base sm:translate-x-0 sm:inset-auto"
                 >
                     <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250">Experience</li>
-                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250">Tech Stack</li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250"><a href="#tech-stack">Tech Stack</a></li>
                     <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250"><a href="#projects">Projects</a></li>
                     <li
                         id="links-icon"
@@ -146,13 +146,13 @@
                 </section>
 
                 <!-- 👺 Projects -->
-                <section id="">
+                <section>
                     <h2 id="projects" class="text-2xl font-bold">Projects</h2>
 
-                    <!-- 🔥 Circles -->
+                    <!-- 🔥 Circles --> 
                     <article
                         id="projx-circles"
-                        class="projx bg-white p-5 rounded-2xl shadow-lg gap-5 sm:hover:"
+                        class="projx bg-white p-5 rounded-2xl shadow-lg gap-5 max-h-full"
                     >
                         <div class="flex gap-3 w-full items-center">
                             <div id="circles-icon">
@@ -181,26 +181,34 @@
                             <div>
                                 <h3 class="text-xl sm:hover:underline sm:hover:text-blue-500"><a href="https://idsp-circle-tawny.vercel.app/">Circles</a></h3>
                             </div>
-                            <div class="ml-auto sm:hidden">
-                                <button class="tab-down-button"><i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="ml-auto mr-3 sm:hidden">
+                                <button class="tab-down-button" id="circles-tab-button"><i class="fa-solid fa-chevron-down"></i></button>
                             </div>
                         </div>
+						
 
-                        <p class="text-s mt-2">A Full-Stack Social Media platform that allows users collaborate and post their photos on a single group account. </p>
-                        <div id="github-circles" class="my-4">
-                            <div>
-								<a href="https://github.com/ILHT-IDSP/IDSP-Circle.git">
-									<i class="fa-brands fa-github text-black text-2xl"></i>
-								</a>
-                                <a
-                                    href="https://github.com/ILHT-IDSP/IDSP-Circle.git"
-                                    class="inline-block sm:hover:underline text-xs"
-                                    >IDSP-Circle
-                                </a>
-                            </div>
-                        </div>
+
+						<div id="circles-description" class="hidden transition-all duration-150 ease-in sm:block">
+
+							<div id="github-circles" class="my-4">
+								<div>
+									<a href="https://github.com/ILHT-IDSP/IDSP-Circle.git">
+										<i class="fa-brands fa-github text-black text-2xl"></i>
+									</a>
+									<a
+										href="https://github.com/ILHT-IDSP/IDSP-Circle.git"
+										class="inline-block sm:hover:underline text-xs"
+										>IDSP-Circle
+									</a>
+								</div>
+							</div>
+							<div class="">
+								<p class="text-s mt-2">A Full-Stack Social Media platform that allows users collaborate and post their photos on a single group account. </p>
+							</div>
+						</div>
                     </article>
-                    <article class="projx bg-white p-5 rounded-2xl shadow-lg gap-5">
+					<!-- 🔥 A-Side Studio | Barbershop -->
+                    <!-- <article class="projx bg-white p-5 rounded-2xl shadow-lg gap-5">
                         <div class="flex gap-3 w-full items-center">
                             <div id="barber-icon">
                                 <svg
@@ -227,16 +235,15 @@
                                         fill="#FF473E"
                                     />
                                     <path
-                                        d="M124.509 48.4056H53.0479C48.4253 48.4056 44.6786 44.6593 44.6786 40.0363C44.6786 35.4132 48.4249 31.667 53.0479 31.667H124.509C129.131 31.667 132.879 35.4132 132.879 40.0363C132.879 44.6593 129.131 48.4056 124.509 48.4056ZM132.878 141.392C132.878 136.77 129.131 133.022 124.509 133.022H53.0479C48.4253 133.022 44.6786 136.77 44.6786 141.392C44.6786 146.013 48.4249 149.761 53.0479 149.761H124.509C129.131 149.761 132.878 146.013 132.878 141.392Z"
-                                        fill="#BCC4C9"
+									d="M124.509 48.4056H53.0479C48.4253 48.4056 44.6786 44.6593 44.6786 40.0363C44.6786 35.4132 48.4249 31.667 53.0479 31.667H124.509C129.131 31.667 132.879 35.4132 132.879 40.0363C132.879 44.6593 129.131 48.4056 124.509 48.4056ZM132.878 141.392C132.878 136.77 129.131 133.022 124.509 133.022H53.0479C48.4253 133.022 44.6786 136.77 44.6786 141.392C44.6786 146.013 48.4249 149.761 53.0479 149.761H124.509C129.131 149.761 132.878 146.013 132.878 141.392Z"
+									fill="#BCC4C9"
                                     />
                                 </svg>
                             </div>
-                            <!-- 🔥 A-Side Studio | Barbershop -->
                             <div>
                                 <h3 class="text-xl">A Side-Studio | Barbershop</h3>
                             </div>
-                            <div class="ml-auto sm:hidden">
+                            <div class="ml-auto mr-3 sm:hidden">
                                 <button class="tab-down-button"><i class="fa-solid fa-chevron-down"></i></button>
                             </div>
                         </div>
@@ -244,8 +251,26 @@
                         <p class="text-s mt-2">
                             A website for the A-Side Studio barbershop that allows its clients to login and book themselves an appointment. This increases productivitiy by reducing amount of messages sent between client and barber.
                         </p>
-                    </article>
+                    </article> -->
                 </section>
+				<section class="w-full max-w-full">
+					<h3 id="tech-stack" class="text-2xl font-bold">Tech Stack</h3>
+					<div id="stack-container" class="my-10">
+  						<div id="technologies" class="p-5 grid grid-cols-4 gap-4 sm:flex sm:gap-5">
+							<div class="flex justify-center items-center"><img src="/icons/typescript-icon.svg" alt="Typescript Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/css3-icon.svg" alt="CSS3 Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/tailwindcss-icon.svg" alt="TailwindCSS Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/html5-icon.svg" alt="HTML5 Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/react-icon.svg" alt="React Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/nextjs-icon.svg" alt="Next.js Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/python-icon.svg" alt="Python Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/mysql-icon.svg" alt="SQL Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/mongodb-icon.svg" alt="MongoDB Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/prisma_orm-icon.svg" alt="Prisma ORM Icon" class="mx-auto" /></div>
+							<div class="flex justify-center items-center"><img src="/icons/redis-icon.svg" alt="" class="mx-auto" /></div>
+						</div>
+					</div>
+				</section>
             </main>
         </div>
     </body>
