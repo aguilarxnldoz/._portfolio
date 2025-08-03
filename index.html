@@ -49,11 +49,11 @@
 
                 <ul
                     id="navigation-contents"
-                    class="w-full max-w-full hidden fixed inset-0 h-[100vh] bg-neutral-200 z-40 items-center justify-center text-black text-2xl gap-8 transition-transform duration-300 transform translate-x-full sm:relative sm:bg-white sm:h-15 sm:flex sm:flex-row sm:gap-15 sm:justify-center sm:text-black sm:text-base sm:translate-x-0 sm:inset-auto"
+                    class="w-full max-w-full hidden fixed inset-0 h-[100vh] bg-neutral-200 z-40 items-center justify-center text-black text-3xl gap-8 transition-transform duration-300 transform translate-x-full sm:relative sm:bg-white sm:h-20 sm:flex sm:flex-row sm:gap-15 sm:justify-center sm:text-black sm:text-2xl sm:translate-x-0 sm:inset-auto"
                 >
-                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250">Experience</li>
-                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250"><a href="#tech-stack">Tech Stack</a></li>
-                    <li class="cursor-pointer hover:text-gray-300 sm:py-4 sm:hover:text-red-600 sm:hover:border-b-6 sm:hover:transition-all sm:hover:duration-250"><a href="#projects">Projects</a></li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-5 sm:hover:text-red-600 sm:hover:border-b-10 sm:hover:transition-all sm:hover:duration-250">Experience</li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-5 sm:hover:text-red-600 sm:hover:border-b-10 sm:hover:transition-all sm:hover:duration-250"><a href="#tech-stack">Tech Stack</a></li>
+                    <li class="cursor-pointer hover:text-gray-300 sm:py-5 sm:hover:text-red-600 sm:hover:border-b-10 sm:hover:transition-all sm:hover:duration-250"><a href="#projects">Projects</a></li>
                     <li
                         id="links-icon"
                         class="flex sm:justify-self-end gap-4"
@@ -110,104 +110,118 @@
             </nav>
 
             <!-- 👺 Header -->
-            <header class="w-full max-w-full sm:flex sm:mt-15 sm:items-center sm:justify-center sm:gap-20">
+            <header class="w-full max-w-full sm:mt-20 sm:flex sm:items-center sm:justify-center sm:h-[70vh] sm:gap-5 lg:gap-20">
                 <!-- 👺 Profile Picture -->
                 <div
                     id="profile-picture"
-                    class="w-75 mx-auto my-4 sm:mx-0"
+                    class="flex justify-self-center"
                 >
                     <img
                         src="/naldouche.jpg"
                         alt="naldouche"
-                        class="aspect-square rounded-full sm:rounded-2xl"
+                        class="text-center aspect-square rounded-full w-90 sm:rounded-2xl sm:mx-5"
                     />
                 </div>
                 <!-- ----------- -->
 
-                <div id="naldoz-page-title">
-                    <h1 class="text-4xl text-center font-bold">Ozem Aguilar</h1>
-                    <h2 class="text-md text-center text-red-600">Full-Stack Web Developer</h2>
+                <div
+                    id="naldoz-page-title"
+                    class=""
+                >
+                    <h1 class="text-4xl text-center font-bold md:text-6xl">Ozem Aguilar</h1>
+                    <h2 class="text-md text-center text-red-600 md:text-2xl">Full-Stack Web Developer</h2>
+                    <div class="m-3 bg-white rounded-2xl shadow-lg sm:w-80 sm:m-auto sm:mt-5">
+                        <p class="p-4 text-md text-center">
+                            I'm currently a 2nd-year student aspiring to become an amazing web-developer.<span class="block">If I'm not rotting in front of computer screen, I'm either at the gym or on top of a mountain.</span>
+                        </p>
+                    </div>
                 </div>
             </header>
+            <!-- <section id="brief-intro" class="">
+				<h3 class="text-xl sm:text-4xl">Hi! I'm <span class="text-red-600">Ozem</span>.</h2>
+			</section> -->
             <div
                 id="header-divider"
-                class="max-w-full w-full my-12"
+                class="max-w-full w-full my-8"
             ></div>
 
             <!-- 👺 Main -->
-            <main class="min-h-screen mx-6 sm:mx-40 sm:mt-25">
-                <div></div>
-                <section id="brief-intro">
-                    <h3 class="text-xl">Hi! I'm <span class="text-red-600">Ozem</span>.</h2>
-                    <div class="m-3 bg-white rounded-2xl shadow-lg">
-                        <p class="p-4 text-sm">I'm currently a 2nd-year student aspiring to become an amazing web-developer.</p>
-                        <p class="p-4 text-sm">When I'm not rotting in front of a computer screen, I'm either at the gym or somewhere touching grass.</p>
-                    </div>
-                </section>
-
+            <main class="min-h-screen mx-6 sm:mx-30 lg:mx-[16rem]">
                 <!-- 👺 Projects -->
                 <section>
-                    <h2 id="projects" class="text-2xl font-bold">Projects</h2>
+                    <h2
+                        id="projects"
+                        class="text-2xl font-bold"
+                    >
+                        Projects
+                    </h2>
 
-                    <!-- 🔥 Circles --> 
+                    <!-- 🔥 Circles -->
                     <article
                         id="projx-circles"
                         class="projx bg-white p-5 rounded-2xl shadow-lg gap-5 max-h-full"
                     >
                         <div class="flex gap-3 w-full items-center">
                             <div id="circles-icon">
-								<a href="https://idsp-circle-tawny.vercel.app/">
-
-									<svg
-										width="45"
-										height="45"
-										viewBox="0 0 180 180"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<rect
-											width="180"
-											height="180"
-											rx="36"
-											fill="#0044CC"
-										/>
-										<path
-											d="M89.996 27C55.2073 27 27 55.2073 27 89.996C27 124.785 55.2073 153 89.996 153C124.785 153 153 124.793 153 89.996C153 55.1994 124.793 27 89.996 27ZM123.11 81.2869C115.321 84.0418 108.446 83.1208 93.0922 90.2263C100.42 94.5848 106.16 95.9503 111.193 96.641C118.751 97.554 126.547 99.1656 126.547 106.033C126.547 108.557 125.404 111.304 123.562 113.368C121.045 116.346 117.378 118.41 113.948 118.41C107.533 118.41 103.865 112.217 101.801 107.184C99.7372 103.056 97.4428 98.0224 90.8058 92.9811C88.7417 100.769 88.7417 105.58 88.7417 109.47C88.7417 115.433 89.8928 119.783 89.2021 124.594C88.2891 131.922 83.0176 136.971 75.9122 136.971C71.5616 136.971 68.3543 133.534 68.3543 129.175C68.3543 118.18 78.8894 117.036 87.8287 92.7509C69.4975 102.143 66.9729 110.614 55.2946 116.346C52.5398 117.719 50.7059 118.18 49.5627 118.18C44.2991 118.18 41.7745 114.512 41.7745 110.161C41.7745 105.12 45.6646 101.452 50.7059 99.6181C60.328 95.9503 68.8068 98.0224 86.9078 90.2263C78.8894 85.4152 72.2444 84.272 66.7506 83.1208C59.6373 82.2079 53.4528 80.6042 53.4528 73.9592C53.4528 66.8618 60.328 61.5903 66.7506 61.5903C72.6969 61.5903 76.3647 68.005 78.4368 73.0462C80.2628 77.3968 82.7795 82.2079 89.2021 87.7096C92.1793 76.0234 90.1151 69.8389 90.1151 63.4242C90.1151 52.6509 94.2355 43.0289 103.865 43.0289C109.137 43.0289 111.654 46.006 111.654 50.817C111.654 61.8205 98.3637 70.0612 92.1793 87.7096C107.295 79.6912 112.106 72.816 119.22 68.005C123.11 64.5674 126.547 61.5903 130.898 61.5903C135.709 61.5903 138.226 65.0278 138.226 69.1482C138.226 76.2536 132.279 79.9214 123.11 81.2869Z"
-											fill="#F8F4EA"
-										/>
-									</svg>
-								</a>
+                                <a href="https://idsp-circle-tawny.vercel.app/">
+                                    <svg
+                                        width="45"
+                                        height="45"
+                                        viewBox="0 0 180 180"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect
+                                            width="180"
+                                            height="180"
+                                            rx="36"
+                                            fill="#0044CC"
+                                        />
+                                        <path
+                                            d="M89.996 27C55.2073 27 27 55.2073 27 89.996C27 124.785 55.2073 153 89.996 153C124.785 153 153 124.793 153 89.996C153 55.1994 124.793 27 89.996 27ZM123.11 81.2869C115.321 84.0418 108.446 83.1208 93.0922 90.2263C100.42 94.5848 106.16 95.9503 111.193 96.641C118.751 97.554 126.547 99.1656 126.547 106.033C126.547 108.557 125.404 111.304 123.562 113.368C121.045 116.346 117.378 118.41 113.948 118.41C107.533 118.41 103.865 112.217 101.801 107.184C99.7372 103.056 97.4428 98.0224 90.8058 92.9811C88.7417 100.769 88.7417 105.58 88.7417 109.47C88.7417 115.433 89.8928 119.783 89.2021 124.594C88.2891 131.922 83.0176 136.971 75.9122 136.971C71.5616 136.971 68.3543 133.534 68.3543 129.175C68.3543 118.18 78.8894 117.036 87.8287 92.7509C69.4975 102.143 66.9729 110.614 55.2946 116.346C52.5398 117.719 50.7059 118.18 49.5627 118.18C44.2991 118.18 41.7745 114.512 41.7745 110.161C41.7745 105.12 45.6646 101.452 50.7059 99.6181C60.328 95.9503 68.8068 98.0224 86.9078 90.2263C78.8894 85.4152 72.2444 84.272 66.7506 83.1208C59.6373 82.2079 53.4528 80.6042 53.4528 73.9592C53.4528 66.8618 60.328 61.5903 66.7506 61.5903C72.6969 61.5903 76.3647 68.005 78.4368 73.0462C80.2628 77.3968 82.7795 82.2079 89.2021 87.7096C92.1793 76.0234 90.1151 69.8389 90.1151 63.4242C90.1151 52.6509 94.2355 43.0289 103.865 43.0289C109.137 43.0289 111.654 46.006 111.654 50.817C111.654 61.8205 98.3637 70.0612 92.1793 87.7096C107.295 79.6912 112.106 72.816 119.22 68.005C123.11 64.5674 126.547 61.5903 130.898 61.5903C135.709 61.5903 138.226 65.0278 138.226 69.1482C138.226 76.2536 132.279 79.9214 123.11 81.2869Z"
+                                            fill="#F8F4EA"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
                             <div>
                                 <h3 class="text-xl sm:hover:underline sm:hover:text-blue-500"><a href="https://idsp-circle-tawny.vercel.app/">Circles</a></h3>
                             </div>
                             <div class="ml-auto mr-3 sm:hidden">
-                                <button class="tab-down-button" id="circles-tab-button"><i class="fa-solid fa-chevron-down"></i></button>
+                                <button
+                                    class="tab-down-button"
+                                    id="circles-tab-button"
+                                >
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
                             </div>
                         </div>
-						
 
-
-						<div id="circles-description" class="hidden transition-all duration-150 ease-in sm:block">
-
-							<div id="github-circles" class="my-4">
-								<div>
-									<a href="https://github.com/ILHT-IDSP/IDSP-Circle.git">
-										<i class="fa-brands fa-github text-black text-2xl"></i>
-									</a>
-									<a
-										href="https://github.com/ILHT-IDSP/IDSP-Circle.git"
-										class="inline-block sm:hover:underline text-xs"
-										>IDSP-Circle
-									</a>
-								</div>
-							</div>
-							<div class="">
-								<p class="text-s mt-2">A Full-Stack Social Media platform that allows users collaborate and post their photos on a single group account. </p>
-							</div>
-						</div>
+                        <div
+                            id="circles-description"
+                            class="hidden transition-all duration-150 ease-in sm:block"
+                        >
+                            <div
+                                id="github-circles"
+                                class="my-4"
+                            >
+                                <div>
+                                    <a href="https://github.com/ILHT-IDSP/IDSP-Circle.git">
+                                        <i class="fa-brands fa-github text-black text-2xl"></i>
+                                    </a>
+                                    <a
+                                        href="https://github.com/ILHT-IDSP/IDSP-Circle.git"
+                                        class="inline-block sm:hover:underline text-xs"
+                                        >IDSP-Circle
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="text-s mt-2">A Full-Stack Social Media platform that allows users collaborate and post their photos on a single group account.</p>
+                            </div>
+                        </div>
                     </article>
-					<!-- 🔥 A-Side Studio | Barbershop -->
+                    <!-- 🔥 A-Side Studio | Barbershop -->
                     <!-- <article class="projx bg-white p-5 rounded-2xl shadow-lg gap-5">
                         <div class="flex gap-3 w-full items-center">
                             <div id="barber-icon">
@@ -253,24 +267,147 @@
                         </p>
                     </article> -->
                 </section>
-				<section class="w-full max-w-full">
-					<h3 id="tech-stack" class="text-2xl font-bold">Tech Stack</h3>
-					<div id="stack-container" class="my-10">
-  						<div id="technologies" class="p-5 grid grid-cols-4 gap-4 sm:flex sm:gap-5">
-							<div class="flex justify-center items-center"><img src="/icons/typescript-icon.svg" alt="Typescript Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/css3-icon.svg" alt="CSS3 Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/tailwindcss-icon.svg" alt="TailwindCSS Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/html5-icon.svg" alt="HTML5 Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/react-icon.svg" alt="React Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/nextjs-icon.svg" alt="Next.js Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/python-icon.svg" alt="Python Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/mysql-icon.svg" alt="SQL Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/mongodb-icon.svg" alt="MongoDB Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/prisma_orm-icon.svg" alt="Prisma ORM Icon" class="mx-auto" /></div>
-							<div class="flex justify-center items-center"><img src="/icons/redis-icon.svg" alt="" class="mx-auto" /></div>
-						</div>
-					</div>
-				</section>
+
+                <!-- 👺 Tech Stack -->
+                <section class="w-full max-w-full">
+                    <h3
+                        id="tech-stack"
+                        class="text-2xl font-bold"
+                    >
+                        Tech Stack
+                    </h3>
+                    <div
+                        id="stack-container"
+                        class="my-10"
+                    >
+                        <div
+                            id="technologies"
+                            class="p-5 grid grid-cols-2 sm:grid-cols-4 gap-5"
+                        >
+                            <div
+                                class="flex flex-col items-center"
+                                id="typescript-icon"
+                            >
+                                <a href="https://www.typescriptlang.org/">
+                                    <img
+                                        src="/icons/typescript-icon.svg"
+                                        alt="TypeScript Icon"
+                                        class=""
+                                    />
+                                </a>
+                                <p><a href="https://www.typescriptlang.org/">TypeScript</a></p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center"
+                                id="css3-icon"
+                            >
+                                <img
+                                    src="/icons/css3-icon.svg"
+                                    alt="CSS3 Icon"
+                                />
+                                <p>CSS 3</p>
+                            </div>
+                            <div
+                                id="HTML5-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <img
+                                    src="/icons/html5-icon.svg"
+                                    alt="HTML5 Icon"
+                                />
+                                <p>HTML 5</p>
+                            </div>
+                            <div
+                                id="TailwindCSS-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://tailwindcss.com/"
+                                    ><img
+                                        src="/icons/tailwindcss-icon.svg"
+                                        alt="TailwindCSS Icon"
+                                /></a>
+                                <p><a href="https://tailwindcss.com/">TailwindCSS</a></p>
+                            </div>
+                            <div
+                                id="React-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://react.dev/"
+                                    ><img
+                                        src="/icons/react-icon.svg"
+                                        alt="React Icon"
+                                /></a>
+                                <p><a href="https://react.dev/">React.js</a></p>
+                            </div>
+                            <div
+                                id="Nextjs-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://nextjs.org/"
+                                    ><img
+                                        src="/icons/nextjs-icon.svg"
+                                        alt="NEXT.js Icon"
+                                /></a>
+                                <p><a href="https://nextjs.org/">Next.js</a></p>
+                            </div>
+                            <div
+                                id="Python-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://www.python.org/"
+                                    ><img
+                                        src="/icons/python-icon.svg"
+                                        alt="Python Icon"
+                                /></a>
+                                <p><a href="https://www.python.org/">Python</a></p>
+                            </div>
+                            <div
+                                id="mongodb-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://www.mongodb.com/"
+                                    ><img
+                                        src="/icons/mongodb-icon.svg"
+                                        alt="MongoDB Icon"
+                                /></a>
+                                <p><a href="https://www.mongodb.com/">MongoDB</a></p>
+                            </div>
+                            <div
+                                id="SQL-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://www.mysql.com/"
+                                    ><img
+                                        src="/icons/mysql-icon.svg"
+                                        alt="MySQL Icon"
+                                /></a>
+                                <p><a href="https://www.mysql.com/">SQL</a></p>
+                            </div>
+                            <div
+                                id="prismaORM-icon"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://www.prisma.io/"
+                                    ><img
+                                        src="/icons/prisma_orm-icon.svg"
+                                        alt="Prisma ORM Icon"
+                                /></a>
+                                <p><a href="https://www.prisma.io/">Prisma ORM</a></p>
+                            </div>
+                            <div
+                                id="redis"
+                                class="flex flex-col items-center"
+                            >
+                                <a href="https://upstash.com/"
+                                    ><img
+                                        src="/icons/redis-icon.svg"
+                                        alt="Redis Icon"
+                                /></a>
+                                <p><a href="https://upstash.com/">Redis</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </body>
