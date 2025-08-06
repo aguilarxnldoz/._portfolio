@@ -52,6 +52,35 @@ body {
     margin: 2rem auto;
 }
 
+.project-stacks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.4em;
+    border: outset #a9a9a9 3px;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-stacks div img {
+    /* padding: 5rem; */
+    width: 50%;
+}
+
+.project-stacks p {
+    position: relative;
+    right: 1rem;
+    text-size-adjust: 60%;
+}
+
+.project-stacks:hover {
+    background-color: var(--charcoal);
+    color: white;
+    box-shadow: #dc143c 1px 1px 1px;
+    border: inset #a9a9a9 3px;
+}
+
 #stack-container {
     --background: linear-gradient(to left, var(--charcoal) 0%, var(--accent) 100%);
     padding: 5px;
@@ -60,6 +89,7 @@ body {
     background: var(--background);
     position: relative;
     z-index: 1;
+    transition: all 2s ease;
 }
 
 #stack-container::after {
