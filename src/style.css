@@ -93,6 +93,7 @@ body {
 }
 
 #stack-container::after {
+    filter: blur(15px);
     position: absolute;
     content: "";
     top: 30px;
@@ -102,8 +103,6 @@ body {
     height: 100%;
     width: 100%;
     transform: scale(0.8);
-    filter: blur(25px);
-    background: var(--accent);
     background: var(--background);
     transition: opacity 0.5s;
 }
