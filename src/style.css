@@ -118,6 +118,22 @@ body {
     border-radius: 0.7rem;
 }
 
+.used-technology {
+    /* border: #000000 solid 3px; */
+    /* padding: 5rem; */
+    /* width: 2rem; */
+    /* height: 2rem; */
+    transition: 150ms;
+    transform: translateY(10%);
+    opacity: 0;
+}
+
+.used-technology.show {
+    transition: 800ms;
+    transform: translateY(0);
+    opacity: 1;
+}
+
 #stack-container .title {
     font-weight: bold;
     letter-spacing: 0.1em;
